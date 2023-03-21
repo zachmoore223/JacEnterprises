@@ -1,5 +1,5 @@
 import './App.css';
-import Activity from './components/Activity';
+
 function App() {
   return (
     <div className="App">
@@ -11,7 +11,7 @@ function App() {
                 <p>We are an organization that specializes in offering niche adventures dedicated to learning about Earth's various ecosystems and unique terrains. Our motto is, "Vincit Qui Se Vincit" which means, "He/she conquers who conquers him/herself."</p>
             </div>
         </header>
-<Activity />
+
         <section id="section-a" class="grid">
             <div class="content-wrap">
                 <h2 class="content-title">Adventure Offerings</h2>
