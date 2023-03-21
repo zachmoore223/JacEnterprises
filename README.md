@@ -1,5 +1,5 @@
 # Pages:
-    -Index.html (localhose:8080) - login page to enter
+    -Index.html (localhost:8080) - login page to enter
     -About Page
     -Contact Page
 
@@ -15,3 +15,11 @@
     5. Each new vists will provide something new to learn or explore
     6. About page w/ professional pics and bios
     7. Contact page using provided CSS & HTML (https://github.com/cljenkinsjr/jackr-enterprises-site/blob/main/index.html)
+
+# MVP:
+
+    - Create Login for user (username only)
+    - Create a main page for user to interact with
+    - Create About Us page with professional pictures/short bios of team JAMZ
+    - Create contact page 
+    - Add a single API for the user to interact with
