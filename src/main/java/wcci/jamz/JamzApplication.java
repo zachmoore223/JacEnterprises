@@ -1,4 +1,4 @@
-package com.example.jamz;
+package wcci.jamz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
