@@ -14,16 +14,19 @@ public class UserController {
     public UserController(@Autowired UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+    @CrossOrigin
     @GetMapping("/api/users")
     public Iterable<User> getUsers() {
         return userRepository.findAll();
     }
 
+    @CrossOrigin
     @GetMapping("/api/users/{user_id}")
     public User getUser(@PathVariable final long user_id) {
         return userRepository.findById(user_id).get();
     }
 
+    @CrossOrigin
     @PostMapping("/api/users")
     public User addUser(@RequestBody User user) {
         return userRepository.save(user);
