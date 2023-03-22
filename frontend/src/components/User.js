@@ -13,7 +13,7 @@ useEffect(() => {
 
     return(
     <div>
-        {users.map(user => (<li key={user.user_id}> Hello {user.userName}</li>))}
+        {users.map(user => (<h1 key={user.user_id}> Welcome {user.userName} to Jac Adventures</h1>))}
     </div>
 );
 }
