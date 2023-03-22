@@ -1,6 +1,11 @@
 import './App.css';
-
-function App() {
+import redSea from './images/redsea-1-1024x768.jpg';
+import Activity from './components/Activity';
+import cavern from './images/cavern.jpg';
+import fiji from './images/fiji-islands.jpg';
+import trek from './images/trek-to-k2-2.jpg';
+import toucan from './images/toucan-barbet.jpg';
+export default function App() {
   return (
     <div className="App">
 
@@ -14,9 +19,28 @@ function App() {
 
         <section id="section-a" class="grid">
             <div class="content-wrap">
+                <h1 class="content-title">Meet the winners of our contest</h1>
+                    <h1>***This is where our profiles go***</h1>
+            </div>
+        </section>
+
+        <section id="activity" class="grid">
+                    <div class="content-wrap">
+                        <Activity />
+                    </div>
+        </section>
+
+        <section id="museum" class="grid">
+                    <div class="content-wrap">
+                        <h1>***This is where our museum api goes***</h1>
+                    </div>
+        </section>
+
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
                 <h2 class="content-title">Adventure Offerings</h2>
                 <div class="content-text">
-                    <p>JacKr prides itself on educating all their clients on what adventures are provided and what can be expected on a chosen adventure.  Jac is constantly changing and seeking to innovate adventures that offer the ultimate in adventure excitement in a fun and safe way.  Past adventures offered include JacKr's Spelunking!, EYA! bka Experience Your Aquarium!,  Skip 2 My Cay! aka Island Hopping, JT,B! bka Just Trek Baby!, and Twitchers! adventures.</p>
+                    <p>JacKr prides itself on educating all their clients on what adventures are provided and what can be expected on a chosen adventure.  Jac is constantly changing and seeking to innovate adventures that offer the ultimate in adventure excitement in a fun and safe way.  Past adventures offered include JacKr's Spelunking!, EYA! aka Experience Your Aquarium!,  Skip 2 My Cay! aka Island Hopping, JT,B! aka Just Trek Baby!, and Twitchers! adventures.</p>
                 </div>
             </div>
         </section>
@@ -25,45 +49,45 @@ function App() {
             <ul>
                 <li>
                     <div class="card">
-                        <img src="/images/redsea-1-1024x768.jpg" alt="" />
+                        <img src={redSea} alt="" />
                         <div class="card-content">
-                            <h3 class="card-title">EYA!&#8482</h3>
+                            <h3 class="card-title">EYA!&trade;</h3>
                             <p>Own an aquarium?  Enjoy visiting major aquariums? Love to visit the tropical fish store?  Is the answer...YES!  Come experience those questions...LIVE AND IN LIVING COLOR!</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card">
-                        <img src="/images/cavern.jpg" alt="" srcset="" />
+                        <img src={cavern}  alt="" srcset="" />
                         <div class="card-content">
-                            <h3 class="card-title">Spelunking!&#8482</h3>
+                            <h3 class="card-title">Spelunking!&trade;</h3>
                             <p>Sure.  The tourist caves are beautiful, fun, and unique to visit.  But why do the tourist thing when you can tame the wilds and mark new paths for future tourists to follow.</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card">
-                        <img src="/images/fiji-islands.jpg" alt="" srcset="" />
+                        <img src={fiji} alt="" srcset="" />
                         <div class="card-content">
-                            <h3 class="card-title">Skip 2 My Cay!&#8482</h3>
-                            <p>What's the fun in just exploring that single island you flew into?!  Why not explore a subset of that island's chain? so just take the opportunity to...Skip to My Cay!&#8482</p>
+                            <h3 class="card-title">Skip 2 My Cay!&trade;</h3>
+                            <p>What's the fun in just exploring that single island you flew into?!  Why not explore a subset of that island's chain? so just take the opportunity to...Skip to My Cay!&trade;</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card">
-                        <img src="/images/trek-to-k2-2.jpg" alt="" srcset="" />
+                        <img src={trek} alt="" srcset="" />
                         <div class="card-content">
-                            <h3 class="card-title">JT,B!&#8482</h3>
-                            <p>"Just Trek Baby!&#8482" is what we say here at Jac.  Come test your fortitude with treks that make you forget that the word civilization even exists. </p>
+                            <h3 class="card-title">JT,B!&trade;</h3>
+                            <p>"Just Trek Baby!&trade;" is what we say here at Jac.  Come test your fortitude with treks that make you forget that the word civilization even exists. </p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card">
-                        <img src="/images/toucan-barbet.jpg" alt="" srcset="" />
+                        <img src={toucan} alt="" srcset="" />
                         <div class="card-content">
-                            <h3 class="card-title">Twitchers!&#8482</h3>
+                            <h3 class="card-title">Twitchers!&trade;</h3>
                             <p>“There are approximately ten thousand species of birds on the planet and no single individual has seen them all. -Bernd Brunner”...Accept the challenge!</p>
                         </div>
                     </div>
@@ -74,7 +98,7 @@ function App() {
         <section id="section-c" class="grid">
             <div class="content-wrap">
                 <h2 class="content-title">Jac will handle all your cravings for adventure</h2>
-                <p>EYA!&#8482, Spelunking!&#8482, Skip 2 My Cay!&#8482, JT,B!&#8482, and Twitchers!&#8482 are just a sampling of the various exhilarating and thrilling eco-friendly global outdoor adventure.</p>
+                <p>EYA!&trade;, Spelunking!&trade;, Skip 2 My Cay!&trade;, JT,B!&trade;, and Twitchers!&trade; are just a sampling of the various exhilarating and thrilling eco-friendly global outdoor adventure.</p>
             </div>
         </section>
 
@@ -95,5 +119,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
