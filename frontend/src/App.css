@@ -79,6 +79,19 @@ p {
     color: #333333;
     padding-bottom: 2em;
 }
+/* Activity Area */
+
+#activity {
+    padding: 2em 1em 1em;
+    background: #2690d4;
+}
+
+/* Museum Area */
+
+#museum {
+    padding: 2em 1em 1em;
+    background: #0cbb46;
+}
 
 /* Section B */
 #section-b {
