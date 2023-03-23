@@ -13,8 +13,8 @@ useEffect(() => {
 
     return(
     <div>
-        <h1> <a href='https://www.boredapi.com/documentation#endpoints-price'>  Activity of the day </a> </h1>
-        <p>{activity.activity}</p>
+        <h1> <a href='https://www.boredapi.com/documentation#endpoints-random'>  Activity of the day </a> </h1>
+        <p>{activity.activity}<br /><a href='{activity.link}'> {activity.link} </a> </p>
         <p>Category: {activity.type}</p>
         <p>Member: {activity.participants} </p>
         <p>Cost: ${activity.price*100} </p>
