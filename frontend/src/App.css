@@ -83,7 +83,27 @@ p {
     color: #333333;
     padding-bottom: 2em;
 }
-/* Activity Area */
+/*Side-By-Side Activity & Museum*/
+
+#container{
+  display: flex;
+}
+
+#container section {
+  padding: 5px;
+}
+
+.grid2{
+  background: #2690d4;
+  width: 50%;
+}
+
+.grid3 {
+  background: #DDD;
+  width: 50%;
+}
+
+/* Activity Area
 
 #activity {
     padding: 2em 1em 1em;
