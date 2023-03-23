@@ -1,6 +1,7 @@
 import './App.css';
 import redSea from './images/redsea-1-1024x768.jpg';
 import Activity from './components/Activity';
+import Programmers from './components/Programmers';
 import User from './components/User';
 import Museum from './components/Museum';
 import cavern from './images/cavern.jpg';
@@ -21,7 +22,7 @@ export default function App() {
         <section id="section-a" class="grid">
             <div class="content-wrap">
                 <h1 class="content-title">Meet the winners of our contest</h1>
-                    <h1>***This is where our profiles go***</h1>
+                   <Programmers />
             </div>
         </section>
 
