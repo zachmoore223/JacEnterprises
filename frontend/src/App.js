@@ -28,6 +28,7 @@ export default function App() {
             </div>
         </section>
 
+       <div id="container">
         <section id="activity" class="grid">
             <div class="content-wrap">
                 <Activity />
@@ -39,6 +40,7 @@ export default function App() {
                 <Museum />
             </div>
         </section>
+       </div>
 
         <section id="section-a" class="grid">
             <div class="content-wrap">
