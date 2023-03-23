@@ -1,6 +1,8 @@
 import './App.css';
 import redSea from './images/redsea-1-1024x768.jpg';
 import Activity from './components/Activity';
+import User from './components/User';
+import Museum from './components/Museum';
 import cavern from './images/cavern.jpg';
 import fiji from './images/fiji-islands.jpg';
 import trek from './images/trek-to-k2-2.jpg';
@@ -8,6 +10,8 @@ import toucan from './images/toucan-barbet.jpg';
 export default function App() {
   return (
     <div className="App">
+
+        <User />
 
         <header id="showcase" class="grid">
             <div class="bg-image"></div>
@@ -25,15 +29,15 @@ export default function App() {
         </section>
 
         <section id="activity" class="grid">
-                    <div class="content-wrap">
-                        <Activity />
-                    </div>
+            <div class="content-wrap">
+                <Activity />
+            </div>
         </section>
 
         <section id="museum" class="grid">
-                    <div class="content-wrap">
-                        <h1>***This is where our museum api goes***</h1>
-                    </div>
+            <div class="content-wrap">
+                <Museum />
+            </div>
         </section>
 
         <section id="section-a" class="grid">
