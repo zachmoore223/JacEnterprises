@@ -3,6 +3,7 @@ import redSea from './images/redsea-1-1024x768.jpg';
 import Activity from './components/Activity';
 import Programmers from './components/Programmers';
 import User from './components/User';
+import CreateUser from './components/CreateUser';
 import Museum from './components/Museum';
 import cavern from './images/cavern.jpg';
 import fiji from './images/fiji-islands.jpg';
@@ -16,6 +17,7 @@ export default function App() {
             <div class="content-wrap">
                 <User />
                 <p>We are an organization that specializes in offering niche adventures dedicated to learning about Earth's various ecosystems and unique terrains. Our motto is, "Vincit Qui Se Vincit" which means, "He/she conquers who conquers him/herself."</p>
+                <CreateUser />
             </div>
         </header>
 
