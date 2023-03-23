@@ -11,13 +11,10 @@ import toucan from './images/toucan-barbet.jpg';
 export default function App() {
   return (
     <div className="App">
-
-        <User />
-
         <header id="showcase" class="grid">
             <div class="bg-image"></div>
             <div class="content-wrap">
-                <h1>Welcome to Jac Enterprises</h1>
+                <User />
                 <p>We are an organization that specializes in offering niche adventures dedicated to learning about Earth's various ecosystems and unique terrains. Our motto is, "Vincit Qui Se Vincit" which means, "He/she conquers who conquers him/herself."</p>
             </div>
         </header>
