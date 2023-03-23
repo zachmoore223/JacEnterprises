@@ -26,7 +26,9 @@ export default function FeedbackForm() {
 
   if (isSent) {
     return     <div>
-                   {users.map(user => (<h1 key={user.user_id}> Welcome {user.userName} to Jac Enterprises</h1>))}
+                   {users
+                   .filter(user => user.userName == text)
+                   .map(user => (<h1 key={user.user_id}> Welcome {user.userName} to Jac Enterprises</h1>))}
                </div>
   }
 
