@@ -25,7 +25,7 @@ export default function FeedbackForm() {
   const isSent = status === 'sent';
 
   if (isSent) {
-    return     <div>
+    return     <div class="inline-div">
                    {users
                    .filter(user => user.userName == text)
                    .map(user => (<h1 key={user.user_id}> Welcome {user.userName} to Jac Enterprises</h1>))}
@@ -33,6 +33,7 @@ export default function FeedbackForm() {
   }
 
   return (
+  <div>
     <form onSubmit={handleSubmit}>
       <h3>Login Here:</h3>
       <input
@@ -47,8 +48,13 @@ export default function FeedbackForm() {
       >
         Login
       </button>
+
       {isSending && <p>Logging in...</p>}
+
     </form>
+
+    <h1> Welcome to Jac Enterprises </h1>
+   </div>
   );
 }
 
