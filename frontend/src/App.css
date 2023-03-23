@@ -22,6 +22,10 @@ h1, h2, h3 {
     padding: 1em 0;
 }
 
+.content-title {
+    font-size: 2em;
+}
+
 p {
     margin: 0;
     padding: 1em 0em;
@@ -93,6 +97,7 @@ p {
     background: #0cbb46;
 }
 
+
 /* Section B */
 #section-b {
     padding: 2em 1em 1em;
@@ -110,6 +115,7 @@ p {
     background: #ffffff;
     color: #333333;
 }
+
 
 .card-content {
     padding: 1em 1em 1em;
@@ -135,6 +141,38 @@ p {
 #section-d .box:last-child {
     background: #0cbb46;
 }
+/* Programmers */
+#programmer{
+    padding: 2em 1em 1em;
+    background: #0cbb46;
+}
+
+#programmer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#programmer li {
+    margin-bottom: 1em;
+    background: #0cbb46;
+    color: #333333;
+}
+
+.card-content {
+    padding: 1em 1em 1em;
+}
+.profile_pic{
+   padding: 2em 1em 1em;;
+    border: 2rem;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+
+}
 
 /* Footer */
 #main-footer {
@@ -153,7 +191,7 @@ p {
 @media (min-width: 700px) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
     }
 
     #section-a .content-text {
@@ -181,4 +219,5 @@ p {
     #section-b li {
         width: 31%;
     }
+
 }
