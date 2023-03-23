@@ -1,13 +1,11 @@
-package restControllers;
+package wcci.jamz.restControllers;
 
-import entities.User;
+import org.springframework.web.bind.annotation.*;
+import wcci.jamz.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import repositories.UserRepository;
+import wcci.jamz.repositories.UserRepository;
 
 @RestController
 public class UserController {
@@ -16,14 +14,21 @@ public class UserController {
     public UserController(@Autowired UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+    @CrossOrigin
     @GetMapping("/api/users")
     public Iterable<User> getUsers() {
         return userRepository.findAll();
     }
 
-    @GetMapping("/api/users/{user.id}")
+    @CrossOrigin
+    @GetMapping("/api/users/{user_id}")
     public User getUser(@PathVariable final long user_id) {
         return userRepository.findById(user_id).get();
     }
 
+    @CrossOrigin
+    @PostMapping("/api/users")
+    public User addUser(@RequestBody User user) {
+        return userRepository.save(user);
+    }
 }

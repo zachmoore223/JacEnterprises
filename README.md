@@ -4,6 +4,16 @@
     -Contact Page
 
 # End Points:
+* All USERS: api/users
+* SPECIFIED USER: api/users/{user_id}
+
+# Curls:
+* GET ALL USERS: 
+* `curl -X GET http://localhost:8080/api/users -H 'Content-Type: application/json'`
+* GET SPECIFIED USER: 
+* `curl -X GET http://localhost:8080/api/users/1 -H 'Content-Type: application/json'`
+* POST NEW USER: 
+* `curl -X POST http://localhost:8080/api/users -H 'Content-Type: application/json' -d '{"userName": "Test"}'`
 
 # Requirements:
     1. An aesthetically pleasing look and feel
