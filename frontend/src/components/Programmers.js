@@ -18,6 +18,7 @@ export default function Programmers() {
         <section id="section-b" class="grid-p">
         <ul>
             <li>
+                <h2 class="j"><strong>J</strong></h2>
                 <div class="card">
                     <img class="profile_pic"
                     src="https://media.licdn.com/dms/image/D5635AQHsq_DTxLPcqA/profile-framedphoto-shrink_200_200/0/1675458916420?e=1680116400&v=beta&t=7mYn5pYuAexBbOaK-ZOEkKzj1x4Ze2BqoNfpTpdt_rA"
@@ -29,6 +30,7 @@ export default function Programmers() {
                 </div>
             </li>
             <li>
+                <h2 class="a"><strong>A</strong></h2>
                 <div class="card">
                     <img class="profile_pic"
                     src="https://media.licdn.com/dms/image/C5603AQERoG8h8Vhmqg/profile-displayphoto-shrink_200_200/0/1576795486089?e=1684972800&v=beta&t=t-_bN9J8IoNSjo8PRMod4I8C5sQe3FjTDEOf_mJK1TI"
@@ -40,6 +42,7 @@ export default function Programmers() {
                 </div>
             </li>
             <li>
+                <h2 class="m"><strong>M</strong></h2>
                 <div class="card">
                     <img class="profile_pic"
                     src="https://media.licdn.com/dms/image/D5635AQEf0mS8x2ddXA/profile-framedphoto-shrink_200_200/0/1676058598411?e=1680112800&v=beta&t=aaTKCHZwepUDHLXQFIvmq09Y717FiD22hitT_rVy4-w"
@@ -51,6 +54,7 @@ export default function Programmers() {
                 </div>
             </li>
             <li>
+                <h2 class="z"><strong>Z</strong></h2>
                 <div class="card">
                     <img class="profile_pic"
                     src="https://media.licdn.com/dms/image/D4D03AQEFDQH1PwBpcA/profile-displayphoto-shrink_200_200/0/1676661045624?e=1684972800&v=beta&t=djaZcHOXVjQSagE2tEcDjZcIKEDt2HAPztOvymsTZKQ"
