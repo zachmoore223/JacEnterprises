@@ -19,8 +19,8 @@ export default function User(){
         return(
         <div>
         <button onClick={() => {nextImage()}}>Next</button>
-        <h1 >The Metropolitan Museum of Art Collection</h1>
-        <p> {art.title} <br/> {art.artistDisplayName} <br/> {art.period}<img src={art.primaryImage} id="pic" />  </p>
+        <h1 > <a href= 'https://www.metmuseum.org/' target="_blank"> The Metropolitan Museum of Art Collection </a> </h1>
+        <p> <h1>{art.title}</h1> <br/> <h2>{art.artistDisplayName}</h2> <br/> {art.period}<img src={art.primaryImage} id="pic" />  </p>
             </div>
         );
     } else {
