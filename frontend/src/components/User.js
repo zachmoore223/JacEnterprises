@@ -18,7 +18,16 @@ export default function FeedbackForm() {
     e.preventDefault();
     setStatus('sending');
     await sendMessage(text);
-    setStatus('sent');
+
+    //if text is empty when user submits reset status to typing
+    let userExists = makeSureUserExists(users, text);
+
+    if(text == "" || userExists == false){
+        setStatus('typing')
+    } else {
+        setStatus('sent');
+    }
+
   }
 
   const isSending = status === 'sending';
@@ -41,7 +50,9 @@ export default function FeedbackForm() {
         value={text}
         onChange={e => setText(e.target.value)}
       />
+
       <br />
+
       <button
         disabled={isSending}
         type="submit"
@@ -63,4 +74,17 @@ function sendMessage(text) {
   return new Promise(resolve => {
     setTimeout(resolve, 2000);
   });
+}
+
+function makeSureUserExists (users, text) {
+   console.log(users);
+   let check = false;
+
+   for (let i = 0; i < users.length; i++){
+      if (users[i].userName == text){
+      check = true;
+      }
+   }
+
+    return check;
 }

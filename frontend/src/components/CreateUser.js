@@ -19,6 +19,9 @@ export default function CreateUser() {
     setStatus('sending');
     await sendMessage(text);
     setStatus('sent');
+
+    /*if text is empty when user submits reset status to typing
+    and do not add the blank user to the API */
     if(text == ""){
     setStatus('typing')
     } else {
@@ -53,10 +56,6 @@ export default function CreateUser() {
         {isSending && <p>Creating user...</p>}
 
       </p>
-
-
-
-
     </form>
   );
 }
