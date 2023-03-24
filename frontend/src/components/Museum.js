@@ -1,23 +1,34 @@
 import React, { useState, useEffect} from "react";
 
 export default function User(){
-  const [departments, setDepartments] = useState([])
-useEffect(() => {
-        const periodicallyFetch = setInterval(
-           () => fetch("https://collectionapi.metmuseum.org/public/collection/v1/departments")
+  const [art, setArt] = useState([])
+
+    function nextImage() {
+            fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects/" + getRandom())
                       .then(res => res.json())
-                      .then(response => setDepartments(response.departments)),
-           1000);
-        return () => clearInterval(periodicallyFetch)
-    }, [])
+                      .then(response => setArt(response));
+    }
 
-    return(
-    <div>
-        {departments.map(department => (<li key={department.departmentId}>
-                                            Hello {department.displayName}
-                                       </li>))}
-    </div>
-);
+  function getRandom() {
+    return Math.floor(Math.random() * 10000);
+  }
+
+
+    if (art.primaryImage) {
+
+        return(
+        <div>
+        <button onClick={() => {nextImage()}}>Next</button>
+        <h1 >The Metropolitan Museum of Art Collection</h1>
+        <p> {art.title} <br/> {art.artistDisplayName} <br/> {art.period}<img src={art.primaryImage} id="pic" />  </p>
+            </div>
+        );
+    } else {
+
+        return(
+        <div>
+            {nextImage()}
+         </div>
+        );
+    }
 }
-
-//{departments.map(department => (<li key={department.departments}> Hello {department.displayName}</li>))}
