@@ -23,7 +23,7 @@ export default function App() {
 
         <section id="section-a" class="grid">
             <div class="content-wrap">
-                <h1 class="content-title">Meet the winners of our contest</h1>
+                <h1 class="content-title">Meet the Minds Behind Jac Enterprises</h1>
                    <Programmers />
             </div>
         </section>
