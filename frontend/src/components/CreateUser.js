@@ -19,7 +19,11 @@ export default function CreateUser() {
     setStatus('sending');
     await sendMessage(text);
     setStatus('sent');
+    if(text == ""){
+    setStatus('typing')
+    } else {
     postNewUser(text);
+    }
   }
 
   const isSending = status === 'sending';
